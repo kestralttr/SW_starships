@@ -11,7 +11,13 @@ class Splash extends React.Component {
   render() {
     return(
       <div>
-        <h1>Hello</h1>
+        <ul>
+          <li>Object 1</li>
+          <li>Object 2</li>
+          <li>Object 3</li>
+          <li>Object 4</li>
+          <li>Object 5</li>
+        </ul>
       </div>
     );
   }
