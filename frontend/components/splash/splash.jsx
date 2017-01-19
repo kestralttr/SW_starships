@@ -16,5 +16,6 @@ class Splash extends React.Component {
     );
   }
 
-
 }
+
+export default withRouter(Splash);
