@@ -6,12 +6,7 @@ class Splash extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
-    this.liStyle = this.liStyle.bind(this);
     this.handleClick = this.handleClick.bind(this);
-  }
-
-  liStyle() {
-    color: 'blue';
   }
 
   handleClick() {
@@ -21,35 +16,18 @@ class Splash extends React.Component {
   }
 
   render() {
-
     const blueText = {
       color: 'blue'
     };
 
-    const redText = {
-      color: 'red'
-    };
-
-    const greenText = {
-      color: 'green'
-    };
-
-    const purpleText = {
-      color: 'purple'
-    };
-
-    const orangeText = {
-      color: 'orange'
-    };
-
     return(
       <div>
-        <ul>
-          <li style={blueText} onClick={this.handleClick()}>Object 1</li>
-          <li style={redText}>Object 2</li>
-          <li style={greenText}>Object 3</li>
-          <li style={purpleText}>Object 4</li>
-          <li style={orangeText}>Object 5</li>
+        <ul id="starship-list">
+          <li className="starship-list-item" onClick={this.handleClick()}>Object 1</li>
+          <li className="starship-list-item">Object 2</li>
+          <li className="starship-list-item">Object 3</li>
+          <li className="starship-list-item">Object 4</li>
+          <li className="starship-list-item">Object 5</li>
         </ul>
       </div>
     );
