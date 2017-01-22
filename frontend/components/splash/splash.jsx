@@ -28,6 +28,10 @@ class Splash extends React.Component {
           <li className="starship-list-item">Object 3</li>
           <li className="starship-list-item">Object 4</li>
           <li className="starship-list-item">Object 5</li>
+          <li className="starship-list-item">Object 6</li>
+          <li className="starship-list-item">Object 7</li>
+          <li className="starship-list-item">Object 8</li>
+          <li className="starship-list-item">Object 9</li>
         </ul>
       </div>
     );

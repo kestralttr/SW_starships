@@ -4,8 +4,19 @@
   left:10px;
   right:10px;
   bottom:10px;
+  list-style-type: none;
 }
 
 .starship-list-item {
+  cursor: pointer;
   color: red;
+  float: left;
+  margin: 10px 10px 10px 10px;
+  border: 1px solid black;
+  padding: 30px 30px 30px 30px;
+  border-radius: 5px;
+}
+
+.starship-list-item:hover {
+  border: 1px solid blue;
 }
