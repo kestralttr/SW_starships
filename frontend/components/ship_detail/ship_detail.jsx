@@ -47,9 +47,9 @@ class ShipDetail extends React.Component {
 
   renderClass() {
     if (this.props.shipDetail) {
-      let starship_class = this.props.shipDetail.starship_class;
+      let starshipClass = this.props.shipDetail.starship_class;
       let result = [];
-      starship_class.split(" ").forEach(function(word){
+      starshipClass.split(" ").forEach(function(word){
         result.push(word[0].toUpperCase(0).concat(word.slice(1)));
       });
       return(

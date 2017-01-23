@@ -15,6 +15,11 @@
   border: 1px solid black;
   padding: 30px 30px 30px 30px;
   border-radius: 5px;
+  min-width: 165px;
+  min-height: 100px;
+  text-align: center;
+  line-height: 100px;
+
 }
 
 .starship-list-item:hover {
