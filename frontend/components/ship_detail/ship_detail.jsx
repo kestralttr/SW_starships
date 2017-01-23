@@ -6,13 +6,65 @@ class ShipDetail extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.renderMGLT = this.renderMGLT.bind(this);
+    this.renderCost = this.renderCost.bind(this);
+    this.renderName = this.renderName.bind(this);
+    this.renderClass = this.renderClass.bind(this);
+  }
 
+  componentWillReceiveProps(newProps) {
+
+  }
+
+  renderMGLT() {
+    if (this.props.shipDetail) {
+      return(
+        this.props.shipDetail.MGLT
+      );
+    }
+  }
+
+  renderCost() {
+    if (this.props.shipDetail) {
+      return(
+        this.props.shipDetail.cost_in_credits
+      );
+    }
+  }
+
+  renderName() {
+    if (this.props.shipDetail) {
+      let name = this.props.shipDetail.name;
+      let result = [];
+      name.split(" ").forEach(function(word){
+        result.push(word[0].toUpperCase(0).concat(word.slice(1)));
+      });
+      return(
+        result.join(" ")
+      );
+    }
+  }
+
+  renderClass() {
+    if (this.props.shipDetail) {
+      let starship_class = this.props.shipDetail.starship_class;
+      let result = [];
+      starship_class.split(" ").forEach(function(word){
+        result.push(word[0].toUpperCase(0).concat(word.slice(1)));
+      });
+      return(
+        result.join(" ")
+      );
+    }
   }
 
   render() {
     return(
       <div>
-        <h1>Hello</h1>
+        <h1>{this.renderName()}</h1>
+        <h2>{this.renderClass()}</h2>
+        <p>Speed: {this.renderMGLT()}</p>
+        <p>Cost: {this.renderCost()}</p>
       </div>
     );
   }

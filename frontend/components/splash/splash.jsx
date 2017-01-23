@@ -9,11 +9,14 @@ class Splash extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick() {
-    return e => {
-      console.log(this.props.requestShip(9));
-      this.props.requestShip(9);
+  componentDidMount() {
+    this.props.removeShip();
+  }
 
+  handleClick(idx) {
+    return e => {
+      this.props.requestShip(idx);
+      this.props.router.push("/shipdetail");
     };
   }
 
@@ -25,15 +28,15 @@ class Splash extends React.Component {
     return(
       <div>
         <ul id="starship-list">
-          <li className="starship-list-item" onClick={this.handleClick()}>Object 1</li>
-          <li className="starship-list-item">Object 2</li>
-          <li className="starship-list-item">Object 3</li>
-          <li className="starship-list-item">Object 4</li>
-          <li className="starship-list-item">Object 5</li>
-          <li className="starship-list-item">Object 6</li>
-          <li className="starship-list-item">Object 7</li>
-          <li className="starship-list-item">Object 8</li>
-          <li className="starship-list-item">Object 9</li>
+          <li className="starship-list-item" onClick={this.handleClick(9)}>Death Star</li>
+          <li className="starship-list-item" onClick={this.handleClick(3)}>Star Destroyer</li>
+          <li className="starship-list-item" onClick={this.handleClick(10)}>Millennium Falcon</li>
+          <li className="starship-list-item" onClick={this.handleClick(12)}>X-Wing</li>
+          <li className="starship-list-item" onClick={this.handleClick(11)}>Y-Wing</li>
+          <li className="starship-list-item" onClick={this.handleClick(28)}>A-Wing</li>
+          <li className="starship-list-item" onClick={this.handleClick(29)}>B-Wing</li>
+          <li className="starship-list-item" onClick={this.handleClick(21)}>Slave 1</li>
+          <li className="starship-list-item" onClick={this.handleClick(39)}>Naboo Fighter</li>
         </ul>
       </div>
     );
