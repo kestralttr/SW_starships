@@ -7,9 +7,9 @@ export const receiveShip = (ship) => ({
   ship: ship
 });
 
-export const requestShip = (searchString) => ({
+export const requestShip = (id) => ({
   type: REQUEST_SHIP,
-  searchString: searchString
+  id: id
 });
 
 export const removeShip = () => ({

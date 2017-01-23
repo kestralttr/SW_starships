@@ -11,7 +11,9 @@ class Splash extends React.Component {
 
   handleClick() {
     return e => {
-      this.props.router.push("/shipdetail");
+      console.log(this.props.requestShip(9));
+      this.props.requestShip(9);
+
     };
   }
 

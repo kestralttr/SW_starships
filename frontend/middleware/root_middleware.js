@@ -1,8 +1,8 @@
 import {applyMiddleware} from 'redux';
-import ShipMiddleware from './ship_middleware';
+import SplashMiddleware from './splash_middleware';
 
 const RootMiddleware = applyMiddleware(
-  ShipMiddleware
+  SplashMiddleware
 );
 
 export default RootMiddleware;
