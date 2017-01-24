@@ -8,7 +8,6 @@ const _defaultState = {
 const ShipDetailReducer = (state = _defaultState, action) => {
   Object.freeze(state);
   let newState = merge({}, state);
-  console.log("reducer action type: ", action.type);
   switch (action.type) {
     case RECEIVE_SHIP:
       newState["ship"] = action.ship;

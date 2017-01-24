@@ -7,6 +7,13 @@ import App from './app';
 
 const Root = ({store}) => {
 
+  const _ensureShipDetailValid = (nextState,replace) => {
+    const shipDetail = store.getState().shipDetail.ship;
+    if (!shipDetail) {
+      replace('/');
+    }
+  };
+
   return (<Provider store={store}>
     <Router history={hashHistory}>
       <Route path="/" component={App}>

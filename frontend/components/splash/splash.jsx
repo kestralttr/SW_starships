@@ -28,10 +28,10 @@ class Splash extends React.Component {
     return(
       <div>
         <ul id="starship-list">
-          <li className="starship-list-item" style={{backgroundImage: "url('/assets/death_star.png')"}} onClick={this.handleClick(9)}>Death Star</li>
-          <li className="starship-list-item" onClick={this.handleClick(3)}>Star Destroyer</li>
-          <li className="starship-list-item" onClick={this.handleClick(10)}>Millennium Falcon</li>
-          <li className="starship-list-item" onClick={this.handleClick(12)}>X-Wing</li>
+          <li className="starship-list-item" style={{backgroundImage: "url('/assets/death_star.png')"}} onClick={this.handleClick(9)}></li>
+          <li className="starship-list-item" style={{backgroundImage: "url('/assets/star_destroyer.png')"}} onClick={this.handleClick(3)}></li>
+          <li className="starship-list-item" style={{backgroundImage: "url('/assets/millennium_falcon.png')"}} onClick={this.handleClick(10)}></li>
+          <li className="starship-list-item" style={{backgroundImage: "url('/assets/x-wing.png')"}} onClick={this.handleClick(12)}></li>
           <li className="starship-list-item" onClick={this.handleClick(11)}>Y-Wing</li>
           <li className="starship-list-item" onClick={this.handleClick(28)}>A-Wing</li>
           <li className="starship-list-item" onClick={this.handleClick(29)}>B-Wing</li>
