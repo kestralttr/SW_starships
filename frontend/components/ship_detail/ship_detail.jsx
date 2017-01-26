@@ -1,4 +1,5 @@
 import React from 'react';
+import d3 from 'd3';
 import {Link, withRouter} from 'react-router';
 
 class ShipDetail extends React.Component {
@@ -65,6 +66,9 @@ class ShipDetail extends React.Component {
         <h2>{this.renderClass()}</h2>
         <p>Speed: {this.renderMGLT()}</p>
         <p>Cost: {this.renderCost()}</p>
+        <svg>
+        <circle cx="5" cy="5" r="5" backgroundColor="red"></circle>
+        </svg>
       </div>
     );
   }
