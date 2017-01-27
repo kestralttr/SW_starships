@@ -79,6 +79,18 @@ class ShipDetail extends React.Component {
     )
   }
 
+  renderAnimatedMGLT(mglt) {
+    if(mglt) {
+      return(
+        <svg width="200" height="50">
+        <rect x="0" y="40" width="0" height="30" fill="black">
+          <animate attributeName="width" from="0" to={mglt} begin="0.5s" dur="2s" fill="freeze"/>
+        </rect>
+        </svg>
+      )
+    }
+  }
+
   render() {
     return(
       <div>
@@ -87,13 +99,10 @@ class ShipDetail extends React.Component {
         <p>Speed: {this.renderMGLT()}</p>
         <p>Cost: {this.renderCost()}</p>
         <svg width="200" height="50">
-          {this.renderMGLTGraph(this.renderMGLT())}
-        <rect x="0" y="40" width="130" height="5" fill="black" />
+          {this.renderAnimatedMGLT(this.renderMGLT())}
+
         </svg>
         <div id="MGLT-graph"></div>
-        <svg>
-        <circle cx="5" cy="5" r="5"></circle>
-        </svg>
 
       </div>
     );
