@@ -62,14 +62,17 @@ class ShipDetail extends React.Component {
   }
 
   renderMGLTGraph(mglt) {
-    let graphP = new ReactFauxDOM.Element('div')
-    graphP.textContent = `${mglt}`;
-    graphP.style.setProperty("display", "inline-block");
-    graphP.setAttribute("width", "10");
-    graphP.setAttribute("height", "10");
-    graphP.style.setProperty("background-color", "red");
+    let speedContainer = new ReactFauxDOM.Element('svg')
+    speedContainer.setAttribute("width", "200");
+    speedContainer.setAttribute("height", "50")
+    let graphMGLT = new ReactFauxDOM.Element('rect', speedContainer);
+    graphMGLT.setAttribute("x", "0");
+    graphMGLT.setAttribute("y", "0");
+    graphMGLT.setAttribute("width", `${mglt}`);
+    graphMGLT.setAttribute("height", "30");
+    graphMGLT.setAttribute("fill", "red");
     return(
-      graphP.toReact()
+      graphMGLT.toReact()
     )
   }
 
@@ -80,7 +83,10 @@ class ShipDetail extends React.Component {
         <h2>{this.renderClass()}</h2>
         <p>Speed: {this.renderMGLT()}</p>
         <p>Cost: {this.renderCost()}</p>
-        {this.renderMGLTGraph(this.renderMGLT())}
+        <svg width="200" height="50">
+          {this.renderMGLTGraph(this.renderMGLT())}
+        <rect x="0" y="40" width="130" height="5" fill="black" />
+        </svg>
         <div id="MGLT-graph"></div>
         <svg>
         <circle cx="5" cy="5" r="5"></circle>
