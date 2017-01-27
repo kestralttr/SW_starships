@@ -1,5 +1,6 @@
 import React from 'react';
 import d3 from 'd3';
+import ReactFauxDOM from 'react-faux-dom';
 import {Link, withRouter} from 'react-router';
 
 class ShipDetail extends React.Component {
@@ -11,6 +12,7 @@ class ShipDetail extends React.Component {
     this.renderCost = this.renderCost.bind(this);
     this.renderName = this.renderName.bind(this);
     this.renderClass = this.renderClass.bind(this);
+    this.renderMGLTGraph = this.renderMGLTGraph.bind(this);
   }
 
   componentWillReceiveProps(newProps) {
@@ -59,6 +61,15 @@ class ShipDetail extends React.Component {
     }
   }
 
+  renderMGLTGraph() {
+    let graphP = new ReactFauxDOM.Element('p')
+    graphP.textContent = 'testing testing whyyyy';
+    graphP.style.setProperty("color", "red");
+    return(
+      graphP.toReact()
+    )
+  }
+
   render() {
     return(
       <div>
@@ -66,9 +77,12 @@ class ShipDetail extends React.Component {
         <h2>{this.renderClass()}</h2>
         <p>Speed: {this.renderMGLT()}</p>
         <p>Cost: {this.renderCost()}</p>
+        {this.renderMGLTGraph()}
+        <div id="MGLT-graph"></div>
         <svg>
-        <circle cx="5" cy="5" r="5" backgroundColor="red"></circle>
+        <circle cx="5" cy="5" r="5"></circle>
         </svg>
+
       </div>
     );
   }
