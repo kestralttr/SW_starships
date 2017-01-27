@@ -62,6 +62,9 @@ class ShipDetail extends React.Component {
   }
 
   renderMGLTGraph(mglt) {
+    if (!mglt) {
+      mglt = "0";
+    }
     let speedContainer = new ReactFauxDOM.Element('svg')
     speedContainer.setAttribute("width", "200");
     speedContainer.setAttribute("height", "50")
