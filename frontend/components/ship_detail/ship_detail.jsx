@@ -61,10 +61,13 @@ class ShipDetail extends React.Component {
     }
   }
 
-  renderMGLTGraph() {
-    let graphP = new ReactFauxDOM.Element('p')
-    graphP.textContent = 'testing testing whyyyy';
-    graphP.style.setProperty("color", "red");
+  renderMGLTGraph(mglt) {
+    let graphP = new ReactFauxDOM.Element('div')
+    graphP.textContent = `${mglt}`;
+    graphP.style.setProperty("display", "inline-block");
+    graphP.setAttribute("width", "10");
+    graphP.setAttribute("height", "10");
+    graphP.style.setProperty("background-color", "red");
     return(
       graphP.toReact()
     )
@@ -77,7 +80,7 @@ class ShipDetail extends React.Component {
         <h2>{this.renderClass()}</h2>
         <p>Speed: {this.renderMGLT()}</p>
         <p>Cost: {this.renderCost()}</p>
-        {this.renderMGLTGraph()}
+        {this.renderMGLTGraph(this.renderMGLT())}
         <div id="MGLT-graph"></div>
         <svg>
         <circle cx="5" cy="5" r="5"></circle>
