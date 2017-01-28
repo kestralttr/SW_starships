@@ -27,8 +27,10 @@ class Splash extends React.Component {
 
     return(
       <div>
+        <div id="left-panel"></div>
+        <div id="right-panel"></div>
         <ul id="starship-list">
-          <li className="starship-list-item" style={{backgroundImage: "url('/assets/death_star.png')"}} onClick={this.handleClick(9)}></li>
+          <li className="starship-list-item" onClick={this.handleClick(13)}>TIE Advanced X1</li>
           <li className="starship-list-item" style={{backgroundImage: "url('/assets/star_destroyer.png')"}} onClick={this.handleClick(3)}></li>
           <li className="starship-list-item" style={{backgroundImage: "url('/assets/millennium_falcon.png')"}} onClick={this.handleClick(10)}></li>
           <li className="starship-list-item" style={{backgroundImage: "url('/assets/x-wing.png')"}} onClick={this.handleClick(12)}></li>

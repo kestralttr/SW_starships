@@ -84,7 +84,7 @@ class ShipDetail extends React.Component {
       return(
         <svg width="200" height="50">
         <rect x="0" y="40" width="0" height="30" fill="black">
-          <animate attributeName="width" from="0" to={mglt} begin="0.5s" dur="2s" fill="freeze"/>
+          <animate attributeName="width" from="0" to={`${parseInt(mglt)*2}`} begin="0.5s" dur="1s" fill="freeze"/>
         </rect>
         </svg>
       )
@@ -97,11 +97,10 @@ class ShipDetail extends React.Component {
         <h1>{this.renderName()}</h1>
         <h2>{this.renderClass()}</h2>
         <p>Speed: {this.renderMGLT()}</p>
-        <p>Cost: {this.renderCost()}</p>
         <svg width="200" height="50">
           {this.renderAnimatedMGLT(this.renderMGLT())}
-
-        </svg>
+        </svg><br></br>
+        <p>Cost: {this.renderCost()}</p>
         <div id="MGLT-graph"></div>
 
       </div>
