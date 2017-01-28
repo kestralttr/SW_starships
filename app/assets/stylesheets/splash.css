@@ -1,3 +1,8 @@
+#splash-master {
+  min-width: 600px;
+  min-height: 400px;
+}
+
 #starship-list {
   position: absolute;
   top:100px;
@@ -6,6 +11,8 @@
   bottom:100px;
   list-style-type: none;
   padding: 10px;
+  min-width: 600px;
+  min-height: 400px;
 }
 
 #left-panel {

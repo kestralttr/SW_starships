@@ -94,15 +94,20 @@ class ShipDetail extends React.Component {
   render() {
     return(
       <div>
-        <h1>{this.renderName()}</h1>
-        <h2>{this.renderClass()}</h2>
-        <p>Speed: {this.renderMGLT()}</p>
-        <svg width="200" height="50">
-          {this.renderAnimatedMGLT(this.renderMGLT())}
-        </svg><br></br>
-        <p>Cost: {this.renderCost()}</p>
-        <div id="MGLT-graph"></div>
-
+        <div id="left-panel"></div>
+        <div id="right-panel"></div>
+        <div id="top-panel"></div>
+        <div id="bottom-panel"></div>
+        <div id="ship-detail-container">
+          <h1>{this.renderName()}</h1>
+          <h2>{this.renderClass()}</h2>
+          <p>Speed: {this.renderMGLT()}</p>
+          <svg width="200" height="50">
+            {this.renderAnimatedMGLT(this.renderMGLT())}
+          </svg><br></br>
+          <p>Cost: {this.renderCost()}</p>
+          <div id="MGLT-graph"></div>
+        </div>
       </div>
     );
   }

@@ -26,7 +26,7 @@ class Splash extends React.Component {
     };
 
     return(
-      <div>
+      <div id="splash-master">
         <div id="left-panel"></div>
         <div id="right-panel"></div>
         <div id="top-panel"></div>
