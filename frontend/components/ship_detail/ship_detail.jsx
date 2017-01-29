@@ -16,6 +16,7 @@ class ShipDetail extends React.Component {
     this.renderMGLTGraph = this.renderMGLTGraph.bind(this);
     this.renderAnimatedMGLTBar = this.renderAnimatedMGLTBar.bind(this);
     this.renderAnimatedAtmoBar = this.renderAnimatedAtmoBar.bind(this);
+    this.renderLength = this.renderLength.bind(this);
   }
 
   componentWillReceiveProps(newProps) {
@@ -56,6 +57,14 @@ class ShipDetail extends React.Component {
       return(
         result.join(" ")
       );
+    }
+  }
+
+  renderLength() {
+    if (this.props.shipDetail) {
+      return(
+        this.props.shipDetail.length
+      )
     }
   }
 
@@ -114,6 +123,19 @@ class ShipDetail extends React.Component {
     }
   }
 
+  renderAnimatedLengthBar(length) {
+    if(length) {
+      let pureLength = length.replace(",","");
+      return(
+        <svg width="600" height="30">
+          <rect x="0" y="0" width="0" height="30" fill="grey">
+            <animate attributeName="width" from="0" to={pureLength} begin="1s" dur="1s" fill="freeze"/>
+          </rect>
+        </svg>
+      )
+    }
+  }
+
   render() {
     return(
       <div>
@@ -135,7 +157,10 @@ class ShipDetail extends React.Component {
           <div id="ship-cost-container">
             <p>Cost: {this.renderCost()}</p>
           </div>
-          <div id="MGLT-graph"></div>
+          <div id="ship-length-container">
+            <p>Length: {this.renderLength()}</p>
+              {this.renderAnimatedLengthBar(this.renderLength())}
+          </div>
         </div>
       </div>
     );

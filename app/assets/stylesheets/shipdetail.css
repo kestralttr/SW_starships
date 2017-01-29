@@ -23,17 +23,25 @@
   border: 1px solid black;
 }
 
+#ship-cost-container {
+  position: absolute;
+  top: 140px;
+  left:0;
+  border: 1px solid black;
+}
+
 #ship-speed-container {
   position: absolute;
-  top: 150px;
+  top: 220px;
   left:0;
   border: 1px solid black;
   width: 250px;
 }
 
-#ship-cost-container {
+#ship-length-container {
   position: absolute;
-  top: 350px;
+  top:400px;
   left:0;
   border: 1px solid black;
+  width: 650px;
 }
