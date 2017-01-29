@@ -9,10 +9,13 @@ class ShipDetail extends React.Component {
     super(props);
     this.state = {};
     this.renderMGLT = this.renderMGLT.bind(this);
+    this.renderAtmo = this.renderAtmo.bind(this);
     this.renderCost = this.renderCost.bind(this);
     this.renderName = this.renderName.bind(this);
     this.renderClass = this.renderClass.bind(this);
     this.renderMGLTGraph = this.renderMGLTGraph.bind(this);
+    this.renderAnimatedMGLTBar = this.renderAnimatedMGLTBar.bind(this);
+    this.renderAnimatedAtmoBar = this.renderAnimatedAtmoBar.bind(this);
   }
 
   componentWillReceiveProps(newProps) {
@@ -23,6 +26,14 @@ class ShipDetail extends React.Component {
     if (this.props.shipDetail) {
       return(
         this.props.shipDetail.MGLT
+      );
+    }
+  }
+
+  renderAtmo() {
+    if (this.props.shipDetail) {
+      return(
+        this.props.shipDetail.max_atmosphering_speed
       );
     }
   }
@@ -79,13 +90,25 @@ class ShipDetail extends React.Component {
     )
   }
 
-  renderAnimatedMGLT(mglt) {
+  renderAnimatedMGLTBar(mglt) {
     if(mglt) {
       return(
         <svg width="200" height="30">
-        <rect x="0" y="0" width="0" height="30" fill="black">
-          <animate attributeName="width" from="0" to={`${parseInt(mglt)*2}`} begin="0.5s" dur="1s" fill="freeze"/>
-        </rect>
+          <rect x="0" y="0" width="0" height="30" fill="red">
+            <animate attributeName="width" from="0" to={`${parseInt(mglt)*2}`} begin="0.5s" dur="1s" fill="freeze"/>
+          </rect>
+        </svg>
+      )
+    }
+  }
+
+  renderAnimatedAtmoBar(atmo) {
+    if(atmo) {
+      return(
+        <svg width="200" height="30">
+          <rect x="0" y="0" width="0" height="30" fill="blue">
+            <animate attributeName="width" from="0" to={`${parseInt(atmo)/6}`} begin="1s" dur="1s" fill="freeze"/>
+          </rect>
         </svg>
       )
     }
@@ -105,7 +128,9 @@ class ShipDetail extends React.Component {
           </div><br></br>
           <div id="ship-speed-container">
             <p>MGLT: {this.renderMGLT()}</p>
-              {this.renderAnimatedMGLT(this.renderMGLT())}
+              {this.renderAnimatedMGLTBar(this.renderMGLT())}
+            <p>Atmospheric Speed: {this.renderAtmo()}</p>
+              {this.renderAnimatedAtmoBar(this.renderAtmo())}
           </div>
           <div id="ship-cost-container">
             <p>Cost: {this.renderCost()}</p>
