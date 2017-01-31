@@ -26,12 +26,12 @@ class Splash extends React.Component {
     };
 
     return(
-      <div id="splash-master">
+      <div id="splash-master" style={{backgroundImage: "url('/assets/grid1.jpg')"}}>
         <div id="left-panel" style={{backgroundImage: "url('/assets/left_laced_shadow.jpg')"}}></div>
         <div id="right-panel" style={{backgroundImage: "url('/assets/right_laced_shadow.jpg')"}} ></div>
         <div id="top-panel" style={{backgroundImage: "url('/assets/top_stitches_embossed.jpg')"}}></div>
         <div id="bottom-panel" style={{backgroundImage: "url('/assets/bottom_laced_shadow.jpg')"}}></div>
-        <ul id="starship-list"  style={{backgroundImage: "url('/assets/grid1.jpg')"}}>
+        <ul id="starship-list">
           <li className="starship-list-item" style={{backgroundImage: "url('/assets/tie.png')"}} onClick={this.handleClick(13)}></li>
           <li className="starship-list-item" style={{backgroundImage: "url('/assets/star_destroyer.png')"}} onClick={this.handleClick(3)}></li>
           <li className="starship-list-item" style={{backgroundImage: "url('/assets/millennium_falcon.png')"}} onClick={this.handleClick(10)}></li>

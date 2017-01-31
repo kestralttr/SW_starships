@@ -1,6 +1,11 @@
 #splash-master {
+  position: fixed;
   min-width: 600px;
   min-height: 400px;
+  background-repeat: repeat;
+  background-position: right;
+  width: 100%;
+  height: 100%;
 }
 
 #starship-list {
@@ -13,9 +18,7 @@
   padding: 10px;
   min-width: 600px;
   min-height: 400px;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size:cover;
+  overflow: auto;
 }
 
 #left-panel {
@@ -88,6 +91,6 @@
   border: 1px solid blue;
 }
 
-.starship-list-item:last-of-type {
+/*.starship-list-item:last-of-type {
   margin-bottom: 120px;
-}
+}*/
