@@ -26,7 +26,7 @@ class Splash extends React.Component {
     };
 
     return(
-      <div id="splash-master" style={{backgroundImage: "url('/assets/grid1.jpg')"}}>
+      <div id="splash-master" style={{backgroundImage: "url('/assets/grid2.jpg')"}}>
         <div id="left-panel" style={{backgroundImage: "url('/assets/left_laced_shadow.jpg')"}}></div>
         <div id="right-panel" style={{backgroundImage: "url('/assets/right_laced_shadow.jpg')"}} ></div>
         <div id="top-panel" style={{backgroundImage: "url('/assets/top_stitches_embossed.jpg')"}}></div>

@@ -138,7 +138,7 @@ class ShipDetail extends React.Component {
 
   render() {
     return(
-      <div id="ship-detail-master">
+      <div id="ship-detail-master" style={{backgroundImage: "url('/assets/grid2.jpg')"}}>
         <div id="left-panel" style={{backgroundImage: "url('/assets/left_laced_shadow.jpg')"}}></div>
         <div id="right-panel" style={{backgroundImage: "url('/assets/right_laced_shadow.jpg')"}} ></div>
         <div id="top-panel" style={{backgroundImage: "url('/assets/top_stitches_embossed.jpg')"}}></div>
