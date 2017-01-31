@@ -8,6 +8,11 @@
   height: 50px;
 }
 
+#ship-detail-master {
+  min-width: 800px;
+
+}
+
 #ship-detail-container {
   position: absolute;
   top: 110px;

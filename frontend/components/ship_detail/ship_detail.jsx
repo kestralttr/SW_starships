@@ -129,7 +129,7 @@ class ShipDetail extends React.Component {
       return(
         <svg width="600" height="30">
           <rect x="0" y="0" width="0" height="30" fill="grey">
-            <animate attributeName="width" from="0" to={pureLength} begin="1s" dur="1s" fill="freeze"/>
+            <animate attributeName="width" from="0" to={pureLength} begin="0s" dur="2.5s" fill="freeze"/>
           </rect>
         </svg>
       )
@@ -138,11 +138,11 @@ class ShipDetail extends React.Component {
 
   render() {
     return(
-      <div>
-        <div id="left-panel"></div>
-        <div id="right-panel"></div>
-        <div id="top-panel"></div>
-        <div id="bottom-panel"></div>
+      <div id="ship-detail-master">
+        <div id="left-panel" style={{backgroundImage: "url('/assets/left_laced_shadow.jpg')"}}></div>
+        <div id="right-panel" style={{backgroundImage: "url('/assets/right_laced_shadow.jpg')"}} ></div>
+        <div id="top-panel" style={{backgroundImage: "url('/assets/top_stitches_embossed.jpg')"}}></div>
+        <div id="bottom-panel" style={{backgroundImage: "url('/assets/bottom_laced_shadow.jpg')"}}></div>
         <div id="ship-detail-container">
           <div id="ship-info-container">
             <h1>{this.renderName()}</h1>

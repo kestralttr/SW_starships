@@ -13,6 +13,9 @@
   padding: 10px;
   min-width: 600px;
   min-height: 400px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size:cover;
 }
 
 #left-panel {
@@ -21,7 +24,9 @@
   left: 0;
   width:100px;
   bottom: 0;
-  background-color: blue;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size:cover;
   z-index: 10;
 }
 
@@ -31,7 +36,9 @@
   right: 0;
   width:100px;
   bottom: 0;
-  background-color: blue;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size:cover;
   z-index: 10;
 }
 
@@ -41,7 +48,9 @@
   height: 100px;
   right: 0;
   left: 0;
-  background-color: blue;
+  background-repeat: no-repeat;
+  background-position:bottom;
+  background-size:cover;
   z-index: 10;
 }
 
@@ -51,7 +60,9 @@
   height: 100px;
   right: 0;
   left: 0;
-  background-color: blue;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size:cover;
   z-index: 10;
 }
 

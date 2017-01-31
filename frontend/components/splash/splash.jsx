@@ -27,20 +27,20 @@ class Splash extends React.Component {
 
     return(
       <div id="splash-master">
-        <div id="left-panel"></div>
-        <div id="right-panel"></div>
-        <div id="top-panel"></div>
-        <div id="bottom-panel"></div>
-        <ul id="starship-list">
-          <li className="starship-list-item" onClick={this.handleClick(13)}>TIE Advanced X1</li>
+        <div id="left-panel" style={{backgroundImage: "url('/assets/left_laced_shadow.jpg')"}}></div>
+        <div id="right-panel" style={{backgroundImage: "url('/assets/right_laced_shadow.jpg')"}} ></div>
+        <div id="top-panel" style={{backgroundImage: "url('/assets/top_stitches_embossed.jpg')"}}></div>
+        <div id="bottom-panel" style={{backgroundImage: "url('/assets/bottom_laced_shadow.jpg')"}}></div>
+        <ul id="starship-list"  style={{backgroundImage: "url('/assets/grid1.jpg')"}}>
+          <li className="starship-list-item" style={{backgroundImage: "url('/assets/tie.png')"}} onClick={this.handleClick(13)}></li>
           <li className="starship-list-item" style={{backgroundImage: "url('/assets/star_destroyer.png')"}} onClick={this.handleClick(3)}></li>
           <li className="starship-list-item" style={{backgroundImage: "url('/assets/millennium_falcon.png')"}} onClick={this.handleClick(10)}></li>
           <li className="starship-list-item" style={{backgroundImage: "url('/assets/x-wing.png')"}} onClick={this.handleClick(12)}></li>
           <li className="starship-list-item" style={{backgroundImage: "url('/assets/y-wing.png')"}} onClick={this.handleClick(11)}></li>
-          <li className="starship-list-item" onClick={this.handleClick(28)}>A-Wing</li>
-          <li className="starship-list-item" onClick={this.handleClick(29)}>B-Wing</li>
-          <li className="starship-list-item" onClick={this.handleClick(22)}>Imperial Shuttle</li>
-          <li className="starship-list-item" onClick={this.handleClick(23)}>Nebulon B Frigate</li>
+          <li className="starship-list-item" style={{backgroundImage: "url('/assets/a-wing.png')"}} onClick={this.handleClick(28)}></li>
+          <li className="starship-list-item" style={{backgroundImage: "url('/assets/b-wing.png')"}} onClick={this.handleClick(29)}></li>
+          <li className="starship-list-item" style={{backgroundImage: "url('/assets/shuttle.png')"}} onClick={this.handleClick(22)}></li>
+          <li className="starship-list-item" style={{backgroundImage: "url('/assets/nebulon.png')"}} onClick={this.handleClick(23)}></li>
         </ul>
       </div>
     );
