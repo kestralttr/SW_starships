@@ -40,21 +40,18 @@ h2 {
   position: absolute;
   top:0;
   left:0;
-  border: 1px solid black;
 }
 
 #ship-cost-container {
   position: absolute;
   top: 140px;
   left:0;
-  border: 1px solid black;
 }
 
 #ship-speed-container {
   position: absolute;
   top: 220px;
   left:0;
-  border: 1px solid black;
   width: 250px;
 }
 
@@ -62,6 +59,5 @@ h2 {
   position: absolute;
   top:400px;
   left:0;
-  border: 1px solid black;
   width: 650px;
 }

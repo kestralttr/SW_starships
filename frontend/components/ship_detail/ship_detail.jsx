@@ -145,8 +145,8 @@ class ShipDetail extends React.Component {
         <div id="bottom-panel" style={{backgroundImage: "url('/assets/bottom_laced_shadow.jpg')"}}></div>
         <div id="ship-detail-container">
           <div id="ship-info-container">
-            <h1>{this.renderName()}</h1>
-            <h2>{this.renderClass()}</h2>
+            <h1>Ship Name: {this.renderName()}</h1>
+            <h2>Ship Class: {this.renderClass()}</h2>
           </div><br></br>
           <div id="ship-speed-container">
             <p>MGLT: {this.renderMGLT()}</p>
