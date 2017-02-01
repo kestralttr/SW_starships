@@ -138,28 +138,30 @@ class ShipDetail extends React.Component {
 
   render() {
     return(
-      <div id="ship-detail-master" style={{backgroundImage: "url('/assets/grid2.jpg')"}}>
+      <div id="ship-detail-master" style={{backgroundImage: "url('/assets/scanlines3.png')"}}>
         <div id="left-panel" style={{backgroundImage: "url('/assets/left_laced_shadow.jpg')"}}></div>
         <div id="right-panel" style={{backgroundImage: "url('/assets/right_laced_shadow.jpg')"}} ></div>
         <div id="top-panel" style={{backgroundImage: "url('/assets/top_stitches_embossed.jpg')"}}></div>
         <div id="bottom-panel" style={{backgroundImage: "url('/assets/bottom_laced_shadow.jpg')"}}></div>
-        <div id="ship-detail-container">
-          <div id="ship-info-container">
-            <h1>Ship Name: {this.renderName()}</h1>
-            <h2>Ship Class: {this.renderClass()}</h2>
-          </div><br></br>
-          <div id="ship-speed-container">
-            <p>MGLT: {this.renderMGLT()}</p>
-              {this.renderAnimatedMGLTBar(this.renderMGLT())}
-            <p>Atmospheric Speed: {this.renderAtmo()}</p>
-              {this.renderAnimatedAtmoBar(this.renderAtmo())}
-          </div>
-          <div id="ship-cost-container">
-            <p>Cost: {this.renderCost()}</p>
-          </div>
-          <div id="ship-length-container">
-            <p>Length: {this.renderLength()}</p>
-              {this.renderAnimatedLengthBar(this.renderLength())}
+        <div className="scanlines" style={{backgroundImage: "url('/assets/scanlines3.png')"}}>
+          <div id="ship-detail-container">
+            <div id="ship-info-container">
+              <h1>Ship Name: {this.renderName()}</h1>
+              <h2>Ship Class: {this.renderClass()}</h2>
+            </div><br></br>
+            <div id="ship-speed-container">
+              <p>MGLT: {this.renderMGLT()}</p>
+                {this.renderAnimatedMGLTBar(this.renderMGLT())}
+              <p>Atmospheric Speed: {this.renderAtmo()}</p>
+                {this.renderAnimatedAtmoBar(this.renderAtmo())}
+            </div>
+            <div id="ship-cost-container">
+              <p>Cost: {this.renderCost()}</p>
+            </div>
+            <div id="ship-length-container">
+              <p>Length: {this.renderLength()}</p>
+                {this.renderAnimatedLengthBar(this.renderLength())}
+            </div>
           </div>
         </div>
       </div>
