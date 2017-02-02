@@ -17,6 +17,7 @@ class ShipDetail extends React.Component {
     this.renderAnimatedMGLTBar = this.renderAnimatedMGLTBar.bind(this);
     this.renderAnimatedAtmoBar = this.renderAnimatedAtmoBar.bind(this);
     this.renderLength = this.renderLength.bind(this);
+    this.returnToSplash = this.returnToSplash.bind(this);
   }
 
   componentWillReceiveProps(newProps) {
@@ -145,6 +146,12 @@ class ShipDetail extends React.Component {
     }
   }
 
+  returnToSplash() {
+    return(e) => {
+      this.props.router.replace("/");
+    }
+  }
+
   render() {
     return(
       <div id="ship-detail-master">
@@ -152,6 +159,7 @@ class ShipDetail extends React.Component {
         <div id="right-panel" style={{backgroundImage: "url('/assets/right_laced_shadow.jpg')"}} ></div>
         <div id="top-panel" style={{backgroundImage: "url('/assets/top_stitches_embossed.jpg')"}}></div>
         <div id="bottom-panel" style={{backgroundImage: "url('/assets/bottom_laced_shadow.jpg')"}}></div>
+        <img id="home-button" onClick={this.returnToSplash()}></img>
         <div id="ship-detail-scanlines" style={{backgroundImage: "url('/assets/scanlines4.png')"}}></div>
           <div id="ship-detail-container">
             <div id="ship-info-container">

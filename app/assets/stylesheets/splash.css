@@ -91,7 +91,7 @@
   box-shadow: 3px 3px 2px 1px;
 }
 
-#home-button:hover {
+#home-button:active {
   box-shadow: 0px 0px 0px 0px;
   bottom: 13px;
   left: 45.5%;
