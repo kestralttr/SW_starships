@@ -143,7 +143,7 @@ class ShipDetail extends React.Component {
         <div id="right-panel" style={{backgroundImage: "url('/assets/right_laced_shadow.jpg')"}} ></div>
         <div id="top-panel" style={{backgroundImage: "url('/assets/top_stitches_embossed.jpg')"}}></div>
         <div id="bottom-panel" style={{backgroundImage: "url('/assets/bottom_laced_shadow.jpg')"}}></div>
-        <div id="ship-detail-scanlines" style={{backgroundImage: "url('/assets/scanlines4.png')"}}>
+        <div id="ship-detail-scanlines" style={{backgroundImage: "url('/assets/scanlines4.png')"}}></div>
           <div id="ship-detail-container">
             <div id="ship-info-container">
               <h1>Ship Name: {this.renderName()}</h1>
@@ -163,7 +163,6 @@ class ShipDetail extends React.Component {
                 {this.renderAnimatedLengthBar(this.renderLength())}
             </div>
           </div>
-        </div>
       </div>
     );
   }
