@@ -27,6 +27,17 @@ h2 {
   background-color: black;
 }
 
+#ship-detail-scanlines {
+  position: fixed;
+  background-repeat: repeat;
+  background-position: left;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  pointer-events: all;
+}
+
 #ship-detail-container {
   position: absolute;
   top: 110px;

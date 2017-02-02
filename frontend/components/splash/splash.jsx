@@ -31,7 +31,7 @@ class Splash extends React.Component {
         <div id="right-panel" style={{backgroundImage: "url('/assets/right_laced_shadow.jpg')"}} ></div>
         <div id="top-panel" style={{backgroundImage: "url('/assets/top_stitches_embossed.jpg')"}}></div>
         <div id="bottom-panel" style={{backgroundImage: "url('/assets/bottom_laced_shadow.jpg')"}}></div>
-        <div className="scanlines" style={{backgroundImage: "url('/assets/scanlines4.png')"}}>
+        <div id="splash-scanlines" style={{backgroundImage: "url('/assets/scanlines4.png')"}}></div>
           <ul id="starship-list">
             <li className="starship-list-item" style={{backgroundImage: "url('/assets/tie.png')"}} onClick={this.handleClick(13)}></li>
             <li className="starship-list-item" style={{backgroundImage: "url('/assets/star_destroyer.png')"}} onClick={this.handleClick(3)}></li>
@@ -43,7 +43,7 @@ class Splash extends React.Component {
             <li className="starship-list-item" style={{backgroundImage: "url('/assets/shuttle.png')"}} onClick={this.handleClick(22)}></li>
             <li className="starship-list-item" style={{backgroundImage: "url('/assets/nebulon.png')"}} onClick={this.handleClick(23)}></li>
           </ul>
-        </div>
+
       </div>
     );
   }
