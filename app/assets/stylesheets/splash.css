@@ -81,6 +81,22 @@
   z-index: 10;
 }
 
+#home-button {
+  position: fixed;
+  bottom: 15px;
+  left: 45%;
+  z-index: 11;
+  cursor: pointer;
+  content: url('/assets/home_button_unpressed.png');
+  box-shadow: 3px 3px 2px 1px;
+}
+
+#home-button:hover {
+  box-shadow: 0px 0px 0px 0px;
+  bottom: 13px;
+  left: 45.5%;
+}
+
 .starship-list-item {
   cursor: pointer;
   color: red;

@@ -126,11 +126,20 @@ class ShipDetail extends React.Component {
   renderAnimatedLengthBar(length) {
     if(length) {
       let pureLength = length.replace(",","");
+      if(pureLength > 600) {
+        pureLength = pureLength = 600;
+      }
+      if(pureLength < 300) {
+        pureLength = pureLength * 3;
+      }
       return(
-        <svg width="600" height="30">
-          <rect x="0" y="0" width="0" height="30" fill="grey">
+        <svg width="600" height="20">
+          <rect x="0" y="0" width="0" height="20" fill="grey">
             <animate attributeName="width" from="0" to={pureLength} begin="0s" dur="2.5s" fill="freeze"/>
           </rect>
+          <rect x="150" y="0" width="450" height="5" fill="black"/>
+          <rect x="300" y="0" width="300" height="10" fill="black"/>
+          <rect x="450" y="0" width="150" height="15" fill="black"/>
         </svg>
       )
     }

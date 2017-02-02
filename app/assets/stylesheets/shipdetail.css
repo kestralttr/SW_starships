@@ -11,6 +11,7 @@
 p {
   color: white;
   font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
 }
 
 h1 {
@@ -70,7 +71,7 @@ h2 {
 
 #ship-length-container {
   position: absolute;
-  top:400px;
+  top:430px;
   left:0;
   width: 650px;
 }

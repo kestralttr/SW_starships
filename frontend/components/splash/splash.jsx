@@ -31,6 +31,7 @@ class Splash extends React.Component {
         <div id="right-panel" style={{backgroundImage: "url('/assets/right_laced_shadow.jpg')"}} ></div>
         <div id="top-panel" style={{backgroundImage: "url('/assets/top_stitches_embossed.jpg')"}}></div>
         <div id="bottom-panel" style={{backgroundImage: "url('/assets/bottom_laced_shadow.jpg')"}}></div>
+        <img id="home-button"></img>
         <div id="splash-scanlines" style={{backgroundImage: "url('/assets/scanlines4.png')"}}></div>
           <ul id="starship-list">
             <li className="starship-list-item" style={{backgroundImage: "url('/assets/tie.png')"}} onClick={this.handleClick(13)}></li>
