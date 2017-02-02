@@ -97,11 +97,14 @@
   background-size: cover;
   background-position: center;
   background-origin: content-box;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .starship-list-item:hover {
   /*border: 1px solid blue;*/
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.5s;
 }
 
 .starship-list-item:last-of-type {
