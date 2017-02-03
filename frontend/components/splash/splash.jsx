@@ -35,14 +35,14 @@ class Splash extends React.Component {
         <div id="splash-scanlines" style={{backgroundImage: "url('http://res.cloudinary.com/dzo2s4ovl/image/upload/v1486159119/scanlines4_faxmf0.png')"}}></div>
           <ul id="starship-list">
             <li className="starship-list-item" style={{backgroundImage: "url('http://res.cloudinary.com/dzo2s4ovl/image/upload/v1486159211/tie_kpjni2.png')"}} onClick={this.handleClick(13)}></li>
-            <li className="starship-list-item" style={{backgroundImage: "url('/assets/star_destroyer.png')"}} onClick={this.handleClick(3)}></li>
-            <li className="starship-list-item" style={{backgroundImage: "url('/assets/millennium_falcon.png')"}} onClick={this.handleClick(10)}></li>
-            <li className="starship-list-item" style={{backgroundImage: "url('/assets/x-wing.png')"}} onClick={this.handleClick(12)}></li>
-            <li className="starship-list-item" style={{backgroundImage: "url('/assets/y-wing.png')"}} onClick={this.handleClick(11)}></li>
-            <li className="starship-list-item" style={{backgroundImage: "url('/assets/a-wing.png')"}} onClick={this.handleClick(28)}></li>
-            <li className="starship-list-item" style={{backgroundImage: "url('/assets/b-wing.png')"}} onClick={this.handleClick(29)}></li>
-            <li className="starship-list-item" style={{backgroundImage: "url('/assets/shuttle.png')"}} onClick={this.handleClick(22)}></li>
-            <li className="starship-list-item" style={{backgroundImage: "url('/assets/nebulon.png')"}} onClick={this.handleClick(23)}></li>
+            <li className="starship-list-item" style={{backgroundImage: "url('http://res.cloudinary.com/dzo2s4ovl/image/upload/v1486159906/star_destroyer_xgmgt8.png')"}} onClick={this.handleClick(3)}></li>
+            <li className="starship-list-item" style={{backgroundImage: "url('http://res.cloudinary.com/dzo2s4ovl/image/upload/v1486159948/millennium_falcon_cq1zxt.png')"}} onClick={this.handleClick(10)}></li>
+            <li className="starship-list-item" style={{backgroundImage: "url('http://res.cloudinary.com/dzo2s4ovl/image/upload/v1486159976/x-wing_zh5hos.png')"}} onClick={this.handleClick(12)}></li>
+            <li className="starship-list-item" style={{backgroundImage: "url('http://res.cloudinary.com/dzo2s4ovl/image/upload/v1486160043/y-wing_ipcavx.png')"}} onClick={this.handleClick(11)}></li>
+            <li className="starship-list-item" style={{backgroundImage: "url('http://res.cloudinary.com/dzo2s4ovl/image/upload/v1486160079/a-wing_n5egbm.png')"}} onClick={this.handleClick(28)}></li>
+            <li className="starship-list-item" style={{backgroundImage: "url('http://res.cloudinary.com/dzo2s4ovl/image/upload/v1486160107/b-wing_gkqguu.png')"}} onClick={this.handleClick(29)}></li>
+            <li className="starship-list-item" style={{backgroundImage: "url('http://res.cloudinary.com/dzo2s4ovl/image/upload/v1486160139/shuttle_hecsgc.png')"}} onClick={this.handleClick(22)}></li>
+            <li className="starship-list-item" style={{backgroundImage: "url('http://res.cloudinary.com/dzo2s4ovl/image/upload/v1486160179/nebulon_dbsvqa.png')"}} onClick={this.handleClick(23)}></li>
           </ul>
 
       </div>
