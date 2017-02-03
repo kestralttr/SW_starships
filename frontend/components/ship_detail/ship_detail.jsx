@@ -1,5 +1,4 @@
 import React from 'react';
-import d3 from 'd3';
 import ReactFauxDOM from 'react-faux-dom';
 import {Link, withRouter} from 'react-router';
 
