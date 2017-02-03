@@ -27,10 +27,10 @@ class Splash extends React.Component {
 
     return(
       <div id="splash-master">
-        <div id="left-panel" style={{backgroundImage: "url('/assets/left_laced_shadow.jpg')"}}></div>
-        <div id="right-panel" style={{backgroundImage: "url('/assets/right_laced_shadow.jpg')"}} ></div>
-        <div id="top-panel" style={{backgroundImage: "url('/assets/top_stitches_embossed.jpg')"}}></div>
-        <div id="bottom-panel" style={{backgroundImage: "url('/assets/bottom_laced_shadow.jpg')"}}></div>
+        <div id="left-panel" style={{backgroundImage: "url('http://res.cloudinary.com/dzo2s4ovl/image/upload/v1486158451/left_laced_shadow_vd6jj7.jpg')"}}></div>
+        <div id="right-panel" style={{backgroundImage: "url('http://res.cloudinary.com/dzo2s4ovl/image/upload/v1486158656/right_laced_shadow_x6wiak.jpg')"}} ></div>
+        <div id="top-panel" style={{backgroundImage: "url('http://res.cloudinary.com/dzo2s4ovl/image/upload/v1486158769/top_stitches_embossed_kafoia.jpg')"}}></div>
+        <div id="bottom-panel" style={{backgroundImage: "url('http://res.cloudinary.com/dzo2s4ovl/image/upload/v1486158808/bottom_laced_shadow_lm0t1n.jpg')"}}></div>
         <img id="home-button"></img>
         <div id="splash-scanlines" style={{backgroundImage: "url('/assets/scanlines4.png')"}}></div>
           <ul id="starship-list">
