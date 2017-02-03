@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactFauxDOM from 'react-faux-dom';
 import {Link, withRouter} from 'react-router';
 
 class ShipDetail extends React.Component {
@@ -79,24 +78,6 @@ class ShipDetail extends React.Component {
         result.join(" ")
       );
     }
-  }
-
-  renderMGLTGraph(mglt) {
-    if (!mglt) {
-      mglt = "0";
-    }
-    let speedContainer = new ReactFauxDOM.Element('svg')
-    speedContainer.setAttribute("width", "200");
-    speedContainer.setAttribute("height", "50")
-    let graphMGLT = new ReactFauxDOM.Element('rect', speedContainer);
-    graphMGLT.setAttribute("x", "0");
-    graphMGLT.setAttribute("y", "0");
-    graphMGLT.setAttribute("width", `${mglt}`);
-    graphMGLT.setAttribute("height", "30");
-    graphMGLT.setAttribute("fill", "red");
-    return(
-      graphMGLT.toReact()
-    )
   }
 
   renderAnimatedMGLTBar(mglt) {
