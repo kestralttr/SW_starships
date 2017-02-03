@@ -1,5 +1,7 @@
 // webpack.config.js
 
+const webpack = require("webpack");
+
 module.exports = {
   entry: './frontend/entry.jsx',
   output: {
