@@ -11,7 +11,6 @@ class ShipDetail extends React.Component {
     this.renderCost = this.renderCost.bind(this);
     this.renderName = this.renderName.bind(this);
     this.renderClass = this.renderClass.bind(this);
-    this.renderMGLTGraph = this.renderMGLTGraph.bind(this);
     this.renderAnimatedMGLTBar = this.renderAnimatedMGLTBar.bind(this);
     this.renderAnimatedAtmoBar = this.renderAnimatedAtmoBar.bind(this);
     this.renderLength = this.renderLength.bind(this);
@@ -140,7 +139,7 @@ class ShipDetail extends React.Component {
         <div id="top-panel" style={{backgroundImage: "url('/assets/top_stitches_embossed.jpg')"}}></div>
         <div id="bottom-panel" style={{backgroundImage: "url('/assets/bottom_laced_shadow.jpg')"}}></div>
         <img id="home-button" onClick={this.returnToSplash()}></img>
-        <div id="ship-detail-scanlines" style={{backgroundImage: "url('/assets/scanlines4.png')"}}></div>
+        <div id="ship-detail-scanlines" style={{backgroundImage: "url('http://res.cloudinary.com/dzo2s4ovl/image/upload/v1486159119/scanlines4_faxmf0.png')"}}></div>
           <div id="ship-detail-container">
             <div id="ship-info-container">
               <h1>Ship Name: {this.renderName()}</h1>

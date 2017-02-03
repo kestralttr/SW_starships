@@ -32,9 +32,9 @@ class Splash extends React.Component {
         <div id="top-panel" style={{backgroundImage: "url('http://res.cloudinary.com/dzo2s4ovl/image/upload/v1486158769/top_stitches_embossed_kafoia.jpg')"}}></div>
         <div id="bottom-panel" style={{backgroundImage: "url('http://res.cloudinary.com/dzo2s4ovl/image/upload/v1486158808/bottom_laced_shadow_lm0t1n.jpg')"}}></div>
         <img id="home-button"></img>
-        <div id="splash-scanlines" style={{backgroundImage: "url('/assets/scanlines4.png')"}}></div>
+        <div id="splash-scanlines" style={{backgroundImage: "url('http://res.cloudinary.com/dzo2s4ovl/image/upload/v1486159119/scanlines4_faxmf0.png')"}}></div>
           <ul id="starship-list">
-            <li className="starship-list-item" style={{backgroundImage: "url('/assets/tie.png')"}} onClick={this.handleClick(13)}></li>
+            <li className="starship-list-item" style={{backgroundImage: "url('http://res.cloudinary.com/dzo2s4ovl/image/upload/v1486159211/tie_kpjni2.png')"}} onClick={this.handleClick(13)}></li>
             <li className="starship-list-item" style={{backgroundImage: "url('/assets/star_destroyer.png')"}} onClick={this.handleClick(3)}></li>
             <li className="starship-list-item" style={{backgroundImage: "url('/assets/millennium_falcon.png')"}} onClick={this.handleClick(10)}></li>
             <li className="starship-list-item" style={{backgroundImage: "url('/assets/x-wing.png')"}} onClick={this.handleClick(12)}></li>
