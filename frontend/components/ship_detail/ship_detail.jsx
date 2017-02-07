@@ -159,7 +159,6 @@ class ShipDetail extends React.Component {
         <div id="right-panel" style={{backgroundImage: "url('https://res.cloudinary.com/dzo2s4ovl/image/upload/v1486158656/right_laced_shadow_x6wiak.jpg')"}} ></div>
         <div id="top-panel" style={{backgroundImage: "url('https://res.cloudinary.com/dzo2s4ovl/image/upload/v1486158769/top_stitches_embossed_kafoia.jpg')"}}></div>
         <div id="bottom-panel" style={{backgroundImage: "url('https://res.cloudinary.com/dzo2s4ovl/image/upload/v1486158808/bottom_laced_shadow_lm0t1n.jpg')"}}></div>
-        <img id="home-button"></img>
         <img id="home-button" onClick={this.returnToSplash()}></img>
         <div id="ship-detail-scanlines" style={{backgroundImage: "url('https://res.cloudinary.com/dzo2s4ovl/image/upload/v1486159119/scanlines4_faxmf0.png')"}}></div>
           <div id="ship-detail-container">
