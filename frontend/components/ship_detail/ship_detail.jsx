@@ -15,6 +15,8 @@ class ShipDetail extends React.Component {
     this.renderAnimatedAtmoBar = this.renderAnimatedAtmoBar.bind(this);
     this.renderLength = this.renderLength.bind(this);
     this.returnToSplash = this.returnToSplash.bind(this);
+    this.renderHyperspaceRating = this.renderHyperspaceRating.bind(this);
+    this.renderHyperspaceRatingText = this.renderHyperspaceRatingText.bind(this);
   }
 
   componentWillReceiveProps(newProps) {
@@ -131,6 +133,25 @@ class ShipDetail extends React.Component {
     }
   }
 
+  renderHyperspaceRating() {
+    if (this.props.shipDetail) {
+      return(
+        this.props.shipDetail.hyperdrive_rating
+      );
+    }
+  }
+
+  renderHyperspaceRatingText(rating) {
+    if(rating) {
+      console.log(rating);
+      return(
+        <div>
+          <p id="hyperspace-rating">{rating}</p>
+        </div>
+      )
+    };
+  }
+
   render() {
     return(
       <div id="ship-detail-master">
@@ -158,6 +179,11 @@ class ShipDetail extends React.Component {
             <div id="ship-length-container">
               <p>Length: {this.renderLength()}</p>
                 {this.renderAnimatedLengthBar(this.renderLength())}
+            </div>
+            <div id="ship-hyperspace-container">
+              {this.renderHyperspaceRatingText(this.renderHyperspaceRating())}
+              <p id="hyperspace-rating-label">Hyperspace Rating</p>
+              <img src="https://res.cloudinary.com/dzo2s4ovl/image/upload/v1486425171/hyperspace4b_ocggqa.jpg" />
             </div>
           </div>
       </div>
