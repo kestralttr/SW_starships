@@ -182,7 +182,7 @@ class ShipDetail extends React.Component {
             </div>
             <div id="ship-hyperspace-container">
               {this.renderHyperspaceRatingText(this.renderHyperspaceRating())}
-              <p id="hyperspace-rating-label">Hyperspace Rating</p>
+              <p id="hyperspace-rating-label">Hyperdrive Rating</p>
               <img src="https://res.cloudinary.com/dzo2s4ovl/image/upload/v1486425171/hyperspace4b_ocggqa.jpg" />
             </div>
           </div>
