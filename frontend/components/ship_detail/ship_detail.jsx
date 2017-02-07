@@ -143,7 +143,6 @@ class ShipDetail extends React.Component {
 
   renderHyperspaceRatingText(rating) {
     if(rating) {
-      console.log(rating);
       return(
         <div>
           <p id="hyperspace-rating">{rating}</p>
