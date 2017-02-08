@@ -17,6 +17,8 @@ class ShipDetail extends React.Component {
     this.returnToSplash = this.returnToSplash.bind(this);
     this.renderHyperspaceRating = this.renderHyperspaceRating.bind(this);
     this.renderHyperspaceRatingText = this.renderHyperspaceRatingText.bind(this);
+    this.renderCrew = this.renderCrew.bind(this);
+    this.renderCrewImage = this.renderCrewImage.bind(this);
   }
 
   componentWillReceiveProps(newProps) {
@@ -141,6 +143,14 @@ class ShipDetail extends React.Component {
     }
   }
 
+  renderCrew() {
+    if (this.props.shipDetail) {
+      return(
+        this.props.shipDetail.crew
+      );
+    }
+  }
+
   renderHyperspaceRatingText(rating) {
     if(rating) {
       return(
@@ -149,6 +159,26 @@ class ShipDetail extends React.Component {
         </div>
       )
     };
+  }
+
+  renderCrewImage(crew) {
+    if(crew) {
+      if(parseInt(crew) === 1) {
+        return(
+          <img id="ship-crew-image" src="https://res.cloudinary.com/dzo2s4ovl/image/upload/v1486589968/crew_icon_one_otlzzo.png" />
+        )
+      }
+      if(parseInt(crew) === 2) {
+        return(
+          <img id="ship-crew-image" src="https://res.cloudinary.com/dzo2s4ovl/image/upload/v1486590858/crew_icon_two_snxtw7.png" />
+        )
+      }
+      if(parseInt(crew) >= 3) {
+        return(
+          <img id="ship-crew-image" src="https://res.cloudinary.com/dzo2s4ovl/image/upload/v1486590071/crew_icon_three_plus_qky0mg.png" />
+        )
+      }
+    }
   }
 
   render() {
@@ -182,6 +212,10 @@ class ShipDetail extends React.Component {
               {this.renderHyperspaceRatingText(this.renderHyperspaceRating())}
               <p id="hyperspace-rating-label">Hyperdrive Rating</p>
               <img src="https://res.cloudinary.com/dzo2s4ovl/image/upload/v1486425171/hyperspace4b_ocggqa.jpg" />
+            </div>
+            <div id="ship-crew-container">
+              {this.renderCrewImage(this.renderCrew())}
+              <p>Crew Number</p>
             </div>
           </div>
       </div>
